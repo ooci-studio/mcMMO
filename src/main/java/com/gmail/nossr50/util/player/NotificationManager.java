@@ -120,11 +120,11 @@ public class NotificationManager {
         if (customEvent.getChatMessageType() == McMMOMessageType.ACTION_BAR) {
             audience.sendActionBar(notificationTextComponent);
 
-            // If the message is being sent to the action bar we need to check if a copy is also sent to the chat system
-            if (customEvent.isMessageAlsoBeingSentToChat()) {
-                //Send copy to chat system
-                audience.sendMessage(notificationTextComponent);
-            }
+//            // If the message is being sent to the action bar we need to check if a copy is also sent to the chat system
+//            if (customEvent.isMessageAlsoBeingSentToChat()) {
+//                //Send copy to chat system
+//                audience.sendMessage(notificationTextComponent);
+//            }
         } else {
             audience.sendMessage(notificationTextComponent);
         }
